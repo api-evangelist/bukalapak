@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://github.com/bukalapak/bukalapak.js (official SDK README) +
+  https://github.com/bukalapak/omniauth-bukalapak +
+  https://github.com/bukalapak/doorkeeper (org OAuth2 provider fork)
+docs: https://github.com/bukalapak/bukalapak.js
+summary:
+  types: [oauth2]
+  api_key_in: []
+  oauth2_flows: [clientCredentials, password]
+  authorization_server: https://accounts.bukalapak.com
+  api_host: https://api.bukalapak.com
+notes: >-
+  Bukalapak's public REST API uses OAuth2. Tokens are issued by the dedicated
+  authorization server accounts.bukalapak.com and presented as a Bearer token in
+  the Authorization header against api.bukalapak.com. The official JavaScript SDK
+  exposes two grants: client_credentials (application-level, read-only public
+  resources such as GET /products) and resource_owner_password (email + password
+  login, granting access to authenticated resources such as GET /me). Expired
+  access tokens are auto-refreshed. The org runs a Doorkeeper-based (Rails) OAuth2
+  provider and ships an OmniAuth strategy, confirming a standard OAuth2 posture.
+  No OpenAPI/Swagger spec is published, so scheme details are captured from
+  first-party SDK/provider source rather than derived from a spec.
+schemes:
+  - name: oauth2
+    type: oauth2
+    flows:
+      - flow: clientCredentials
+        tokenUrl: https://accounts.bukalapak.com/token
+        usage: >-
+          Application credentials (clientId + clientSecret). Grants access to
+          read-only / public endpoints without a user context.
+      - flow: password
+        tokenUrl: https://accounts.bukalapak.com/token
+        usage: >-
+          Resource-owner password grant (username/email + password). Grants
+          access to authenticated, user-scoped endpoints; token auto-refreshes.
+    token_presentation: Authorization Bearer header
+    sources:
+      - https://github.com/bukalapak/bukalapak.js
