@@ -1,7 +1,30 @@
 aid: bukalapak
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bukalapak.png
 name: Bukalapak
-description: Bukalapak is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bukalapak is one of Indonesia's largest online marketplaces and all-commerce
+  platforms, connecting millions of individual sellers, small warungs (kiosks),
+  and buyers across the archipelago, alongside virtual products, financial
+  services, and online-to-offline retail. Originally added to the API Evangelist
+  network as a portfolio-lead stub (backed by 500 Global), this profile has been
+  enriched from Bukalapak's real public developer surface: a public REST API at
+  api.bukalapak.com secured with OAuth2 via accounts.bukalapak.com, a first-party
+  JavaScript SDK (bukalapak.js), and a large public GitHub organization. No
+  OpenAPI/Swagger specification is currently published by the provider, so the
+  captured artifacts (authentication, packages, domain security) are sourced from
+  first-party repositories and live domain probes rather than derived from a spec.
 url: https://raw.githubusercontent.com/api-evangelist/bukalapak/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +34,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- E-Commerce
+- Marketplace
+- Retail
+- Indonesia
+- Southeast Asia
+- Payments
+- OAuth2
+apis:
+- name: Bukalapak REST API
+  description: >-
+    Bukalapak's public REST API for marketplace resources such as products and
+    the authenticated user profile, secured with OAuth2 (client_credentials and
+    resource-owner password grants) issued by accounts.bukalapak.com. Consumed
+    via the official bukalapak.js JavaScript client. No provider OpenAPI spec is
+    currently published.
+  humanURL: https://github.com/bukalapak/bukalapak.js
+  baseURL: https://api.bukalapak.com/
+  tags:
+  - E-Commerce
+  - Marketplace
+  - OAuth2
+  properties:
+  - type: Authentication
+    url: authentication/bukalapak-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +69,20 @@ maintainers:
 common:
 - type: Website
   url: https://bukalapak.com
+- type: GitHubOrganization
+  url: https://github.com/bukalapak
+- type: Authentication
+  url: authentication/bukalapak-authentication.yml
+- type: Packages
+  url: packages/bukalapak-packages.yml
+- type: SDKs
+  url: packages/bukalapak-packages.yml
+- type: DomainSecurity
+  url: security/bukalapak-domain-security.yml
+- type: LLMsTxt
+  url: llms/bukalapak-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

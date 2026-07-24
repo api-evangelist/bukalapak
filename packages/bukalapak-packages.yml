@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bukalapak/bukalapak.js
+notes: >-
+  Bukalapak publishes a first-party JavaScript client for its public REST API
+  (api.bukalapak.com). The npm name reserved for it (`bukalapak`) currently has
+  no published versions (last registry activity 2022-06-06); the canonical
+  source is the GitHub repository, which is archived (last pushed 2017, read-only).
+  Recorded as official first-party source. No other first-party client libraries
+  (PyPI, Maven, NuGet, Go, RubyGems, Packagist, crates.io) were found under the
+  Bukalapak org.
+packages:
+  - language: javascript
+    registry: github
+    name: bukalapak.js
+    url: https://github.com/bukalapak/bukalapak.js
+    npm_name: bukalapak
+    npm_url: https://www.npmjs.com/package/bukalapak
+    install: null
+    official: true
+    archived: true
+    description: >-
+      Bukalapak API JavaScript wrapper with auth + api adapters. Handles OAuth2
+      client_credentials and resource_owner_password token acquisition against
+      accounts.bukalapak.com, auto-includes the Authorization header, and
+      auto-refreshes expired tokens.

@@ -1,0 +1,19 @@
+# Bukalapak
+
+> Bukalapak is one of Indonesia's largest online marketplaces and all-commerce platforms, connecting individual sellers, small warungs (kiosks) and buyers across the archipelago. It exposes a public REST API at api.bukalapak.com, secured with OAuth2 through accounts.bukalapak.com, historically consumed via a first-party JavaScript client wrapper. This profile is maintained by the API Evangelist network.
+
+## API
+- [Bukalapak REST API (base)](https://api.bukalapak.com/): OAuth2-secured REST API; example endpoints include GET /products (public search) and GET /me (authenticated user).
+- [Authorization server](https://accounts.bukalapak.com): OAuth2 token issuance (client_credentials and resource-owner password grants).
+
+## SDKs
+- [bukalapak.js](https://github.com/bukalapak/bukalapak.js): Official JavaScript API wrapper (auth + api adapters, auto token refresh). Archived source.
+
+## Artifacts (API Evangelist enrichment)
+- [Authentication profile](authentication/bukalapak-authentication.yml): OAuth2 flows and token presentation.
+- [Packages / SDKs](packages/bukalapak-packages.yml): First-party client libraries.
+- [Domain security](security/bukalapak-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe results.
+
+## Company
+- [Website](https://www.bukalapak.com): Bukalapak marketplace.
+- [GitHub organization](https://github.com/bukalapak): 140+ public repositories.
