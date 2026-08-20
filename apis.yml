@@ -43,6 +43,15 @@ tags:
 - Indonesia
 - Southeast Asia
 - Payments
+- Authentication
+tags_raw:
+- Company
+- E-Commerce
+- Marketplace
+- Retail
+- Indonesia
+- Southeast Asia
+- Payments
 - OAuth2
 apis:
 - name: Bukalapak REST API
@@ -55,6 +64,10 @@ apis:
   humanURL: https://github.com/bukalapak/bukalapak.js
   baseURL: https://api.bukalapak.com/
   tags:
+  - E-Commerce
+  - Marketplace
+  - Authentication
+  tags_raw:
   - E-Commerce
   - Marketplace
   - OAuth2
