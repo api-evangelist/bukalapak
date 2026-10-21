@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/bukalapak/integrations
 - https://n8n.io/integrations/bukalapak/
@@ -10,7 +10,39 @@ checked:
 - https://monid.ai/tools/bukalapak
 - https://n8n.io/integrations/bukalapak/
 - https://zapier.com/apps/bukalapak/integrations
+- https://500.co/api/startups
+- https://500.co/companies
+- https://www.antler.co/portfolio
+- https://www.techstars.com/portfolio
+- https://www.ycombinator.com/companies
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: 500 Global
+  partner: 500-global
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://500.co/companies
+  category: accelerator portfolio participation
+  contract_reference:
+    register: 500 Global portfolio (500.co/companies; the page's own JSON 500.co/api/startups)
+    standard: null
+    spec_file: null
+    role: accelerator-portfolio-company
+    registered_name: Bukalapak
+    register_id: https://500.co/companies
+    register_country: Indonesia
+    register_website: www.bukalapak.com
+    matched_domain: bukalapak.com
+    matched_by: domain
+    signal_note: 'participation only: the accelerator''s own portfolio register lists the company (cohort / investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-accelerator-portfolios.py
+    detected: '2026-10-21'
+    year: '2014'
+  detected_by: sweep-accelerator-portfolios.py
+  first_seen: '2026-10-21'
 templates: []
