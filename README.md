@@ -64,6 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bukalapak is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Bukalapak is one of Indonesia's largest online marketplaces and all-commerce platforms, connecting millions of individual sellers, small warungs (kiosks), and buyers across the archipelago, alongside virtual products, financial services, and online-to-offline retail. Originally added to the API Evangelist network as a portfolio-lead stub (backed by 500 Global), this profile has been enriched from Bukalapak's real public developer surface: a public REST API at api.bukalapak.com secured with OAuth2 via accounts.bukalapak.com, a first-party JavaScript SDK (bukalapak.js), and a large public GitHub organization. No OpenAPI/Swagger specification is currently published by the provider, so the captured artifacts (authentication, packages, domain security) are sourced from first-party repositories and live domain probes rather than derived from a spec.
 
-Backed by: 500-global — https://bukalapak.com
+**Areas:** Company · E-Commerce · Marketplace · Retail · Indonesia · Southeast Asia · Payments · Authentication
+
+## Bukalapak on APIs.io
+
+Everything profiled for Bukalapak is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bukalapak/](https://apis.io/providers/bukalapak/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Bukalapak REST API](https://apis.io/apis/bukalapak/bukalapak-rest-api/) — Bukalapak's public REST API for marketplace resources such as products and the authenticated user profile, secured with OAuth2 (client_credentials and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bukalapak Authentication](https://apis.io/security/bukalapak/bukalapak-authentication/)
+- [Bukalapak Domain Security](https://apis.io/security/bukalapak/bukalapak-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bukalapak.com)
+- [GitHub](https://github.com/bukalapak)
+
+## API Evangelist rating
+
+**Kin Score 10.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.7** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bukalapak/](https://apis.io/providers/bukalapak/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bukalapak: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bukalapak/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
